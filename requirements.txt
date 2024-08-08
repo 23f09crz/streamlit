@@ -1,5 +1,4 @@
 streamlit
 aiohttp
 requests
-fcntl
-errno
+portalocker
