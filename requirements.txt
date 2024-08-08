@@ -1,0 +1,5 @@
+streamlit
+aiohttp
+requests
+fcntl
+errno
