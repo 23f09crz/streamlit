@@ -62,7 +62,7 @@ def has_first_half_goal_tendency(team_history: List[Dict], team_name: str, thres
 
 
 async def filter_first_half_games(live_games: List[Dict]) -> List[Dict]:
-    first_half_games = [game for game in live_games if game['fixture']['status']['short'] == '1H']
+    first_half_games = [game for game in live_games if (game['fixture']['status']['short'] == '1H' and game['fixture']['status']['elapsed'] < 36) ]
 
     async def process_game(game):
         home_team = game['teams']['home']

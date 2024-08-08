@@ -67,10 +67,9 @@ async def display_game(selected_game):
 
     if status_description == 'HT':
         status_text = "INTERVALO"
-    elif status_description == '2H':
-        status_text = f"{time_elapsed} mins"
     else:
-        status_text = status_description
+        status_text = f"{time_elapsed} mins"
+    
 
     if home_team_position:
         st.title(
